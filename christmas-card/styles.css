@@ -1,0 +1,68 @@
+/* Erklärungen zu allen wichtigen CSS-Eigenschaften: https://www.w3schools.com/cssref/ */
+
+/* ----------  Hintergrund Bild ----------- */
+
+html {
+    background: url(images/winter-landscape.jpg);   /* link zur Bilddatei. Pfad zur Bilddatei ausgehend von der Position der CSS-Datei */
+    background-repeat: no-repeat;                   /* wiederholung des Bildes */
+    background-position: center center;             /* horizontale und vertikale Position des Bildes auf der Webseite */
+    background-attachment: fixed;                   /* das Bild scrollt nicht mit dem Inhalt der Seite mit */
+    background-size: cover;                         /* Bild wird vergrößert, bzw. verkleinert, um die gesamte Seite auszufüllen */
+}
+
+/* ----------  Divs ----------- */
+
+#envelope {
+    background-color: #FFFFFF;
+    width: 75%;
+    margin: 10% auto;
+    padding: 0.5em;
+}
+
+#headline {
+
+}
+
+/* ----------  Text ----------- */
+
+p {
+    font-family: 'Nothing You Could Do', serif;
+    text-align: center;
+    font-style: italic;
+}
+
+h1 {
+    text-align: center;
+    font-family: serif;
+    font-style: italic;
+    color: #0e407d;  /* farben auswählen mit einem css-color-picker, z.b. auf google */
+}
+
+#headline > h1 {
+    font-size: 4em;
+}
+
+#greetings > p {
+    font-size: 2em;
+}
+
+#image-license {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 0.8em;
+}
+
+/* ----------  Links ----------- */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
