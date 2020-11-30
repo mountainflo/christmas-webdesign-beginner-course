@@ -46,8 +46,8 @@ font-family: 'Nothing You Could Do', serif;
 
 ### Rechtefreie Bilder aus dem Internet
 
-Im Internet stehen dir ganz viele Bilder zur Verfügung. Du musst aber aufpassen welche Bilder du verwendest.
-Nicht alle Bilder, die einfach so herunterladen kannst, sind auch wirklich kostenlos.
+Im Internet stehen dir ganz viele Bilder zur Verfügung. Du musst aber aufpassen, welche Bilder du verwendest.
+Nicht alle Bilder, die du einfach so herunterladen kannst, sind auch wirklich kostenlos.
 Meistens hat der Urheber des Bildes die Rechte an dem Bild. Falls du dieses Bild verwenden möchtest, musst du zuerst den Urheber um Erlaubnis fragen.
 
 Freie Bilder, bei denen keine Namesnennung des Urhebers erforderlich ist, findest du auf Seiten, die "Free Stock Images" anbieten.
@@ -73,7 +73,7 @@ html {
 }
 ```
 
-### Weihnachtskarte mit Freunden teilen
+## Weihnachtskarte mit Freunden teilen
 
 In `repl.it` hast du die Möglichkeit deine Webseite auch in einem separaten Tab zu öffnen.
 Die URL des neuen Tab kannst du kopieren und an Freunde und Familie verschicken.
