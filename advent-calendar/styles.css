@@ -1,0 +1,74 @@
+/* -------- Text ---------- */
+
+h1 {
+    color: #931c07;
+    text-align: center;
+    font-family: serif;
+    font-style: italic;
+}
+
+/* -------- Grid ---------- */
+.grid {
+    display: grid;  /* TODO explain grid-layout*/
+    grid-template-columns: repeat(4, 1fr); /* TODO explain the fr-units */
+    grid-template-rows: auto;
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+}
+
+.door {
+    text-align: center;
+}
+
+/* -------- Links ---------- */
+
+a.button-door-link {
+    background-color: #ef4501;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+
+    font-family: serif;
+    font-style: italic;
+    font-size: 1.5em; /* TODO explain the em-units that they are dependent to the font-size (in complete-course) */
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+a.button-door-link:hover {
+    background-color: #931c07;
+    color: white;
+}
+
+/* -------- Individual pages for the doors ---------- */
+
+p.quote {
+    font-family: serif;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+p.quote-author {
+    font-style: italic;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+div.quote-frame {
+    background-color: #ef4501;
+    width: 75%;
+    margin: 0 auto;
+    padding: 1em 1.5em;
+}
+
+a.home-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+a.home-link:hover {
+    text-decoration: underline;
+}
