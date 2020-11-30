@@ -7,3 +7,8 @@ The course includes the following content:
 * Christmas card
 * Advent calendar
 * Website for the drawing of gnome pairs
+
+## Contributors
+
+* [mountainflo](https://github.com/mountainflo)
+* [CraftyKoala](https://github.com/CraftyKoala)
