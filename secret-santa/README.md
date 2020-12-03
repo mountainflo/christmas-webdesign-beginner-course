@@ -46,43 +46,37 @@ Den inhalt der `index.html` könnt ihr mit dem inhalt der [index.html](templates
 Benutze JavaScript um nach dem klicken auf den Butten unten die Namen aus den input-Elementen zu lesen und gebe Sie in der Konsole unten rechts aus.
 
 <details>
-    <summary>Tip 1</summary>
+  <summary>Tip 1</summary>
 
-    Dazu wirst du die `querySelector` Funktion und einen `EventListener` brauchen.
+  Dazu wirst du die `querySelector` Funktion und einen `EventListener` brauchen.
 
-    ### querySelector Beispiel
-    ```html
-    <button calss="myButton">Drück mich</button>
-    ```
+  ### querySelector Beispiel
+  ```html
+  <button calss="myButton">Drück mich</button>
+  ```
 
-    ```javascript
-    const button = document.querySelector(".myButton");
-    ```
+  ```javascript
+  const button = document.querySelector(".myButton");
+  ```
 
-    ### EventListener Beispiel    
-    ```javascript
-    button.addEventListener("click", tueEtwas);
+  ### EventListener Beispiel    
+  ```javascript
+  button.addEventListener("click", tueEtwas);
 
-    function tueEtwas(event){
-        event.preventDefault();
-        // hier dein code
-    }
-    ```
+  function tueEtwas(event){
+    event.preventDefault();
+    // hier dein code
+  }
+  ```
 </details><br>
 <details>
-    <summary>Tip 2</summary>
+  <summary>Tip 2</summary>
 
-    Um die Namen zu lesen kanst du die `value` Eigenschaft von input-Elementen nutzen
-
-    ### value Beispiel    
-    ```javascript
-    button.addEventListener("click", tueEtwas);
-
-    function tueEtwas(event){
-        event.preventDefault();
-        // hier dein code
-    }
-    ```
+  Um die Namen zu lesen kanst du die `value` Eigenschaft von input-Elementen nutzen
+  ### value Beispiel    
+  ```javascript
+  let wichtelName = myInput.value
+  ```
 </details>
 
 
