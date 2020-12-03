@@ -1,12 +1,12 @@
 ![santa]
 # Secret Santa (Wichtel Paar Generator)
-Wenn ihr euch schon ein bisschen mit html und css auskennt könnt ihr etwas schwereres versuchen.
+Wenn du dich schon ein bisschen mit html und css auskennst kannst du etwas schwereres versuchen.
 
 Wichteln, wer kennt es nicht, zu Weihnachten schreibt man die Namen der Familie und freunde auf 
 kleine Zettel mischt Sie in einer Schüssel und jeder zieht einen Namen. Der gezogene wird dann heimlich beschenkt.
 
 In den heutigen Zeiten wird es aber immer schwerer sich zu treffen um Namen aus der Schüssel zu ziehen.
-Zum glück könnt ihr programmieren. Jetzt könnt ihr eine Seite schreiben die Wichtelpartner zuordnet.
+Zum glück kannst du programmieren. Jetzt kannst du eine Seite schreiben die Wichtelpartner zuordnet.
 Das funktioniert auch in Skype und Teams.
 
 Mehr infos zum Wichteln: [Geschenke.de - Wichteln](https://www.geschenke.de/magazin-wichteln/)
@@ -16,16 +16,16 @@ Mehr infos zum Wichteln: [Geschenke.de - Wichteln](https://www.geschenke.de/maga
 2. Niemand darf sich selbst beschenken
 
 ## Ziel des Projektes
-In diesem Projekt benutzen wir JavaScript um Namen die auf einer HTML Seite eingegeben wurden aus zu lesen.
+In diesem Projekt benutzen wir JavaScript um Namen die auf einer HTML Seite eingegeben wurden auszulesen.
 Diese namen ordnen wir dann zufällig einander zu, so das jeder einem anderen aus der Gruppe etwas schenkt.
-Zu begin testen wir auf der Konsole, bauen unsere Seite aber nach und nach aus.
+Zu Beginn testen wir auf der Konsole, bauen unsere Seite aber nach und nach aus.
 
-Wenn ihr alle aufgaben gemeistert habt sollte eure Seite
+Wenn du alle Aufgaben gemeistert hast sollte deine Seite
 * Die Paare auf der Seite ausgeben
 * Belibig viele Teilnehmer unterstützen
 * Keine leeren Namen akzeptieren
 
-Ihr werdet hier viel JavaScript brauchen also haltet besser eine JavaScript Dokumentation bereit:  
+Du wirst hier viel JavaScript brauchen also halte besser eine JavaScript Dokumentation bereit:  
 [MDN JavaScript Dokumentation](https://developer.mozilla.org/de/docs/Web/JavaScript)  
 [W3Schools.com JavaScript](https://www.w3schools.com/js/default.asp)
 
@@ -40,7 +40,7 @@ Ausgabe: {"Anna" => "Bert", "Bert" => "Anna", "Ernie" => "Lisa", "Lisa" => "Erni
 
 ### Anfang
 Um zu beginnen, erstellt ein neues repl auf repl.it. Die Sprache sollte `HTML, CSS, JS` sein.
-Den inhalt der `index.html` könnt ihr mit dem inhalt der [index.html](templates/index.html) im `templates` ordner ersetzen. Hier habe ich das Grundgerüst schon vorbereitet. Das gleiche macht ihr mit der [style.css](templates/style.css) datei.
+Den inhalt der `index.html` kannst du mit dem inhalt der [index.html](templates/index.html) im `templates` ordner ersetzen. Das gleiche machst du mit der [style.css](templates/style.css) datei. In den beiden Dateien habe ich das Grundgerüst schon vorbereitet, du must dir nur noch einen netten Text ausdenken und in das HTML schreiben.
 
 ### Namen lesen
 Benutze JavaScript um nach dem klicken auf den Butten unten die Namen aus den input-Elementen zu lesen und gebe Sie in der Konsole unten rechts aus.
@@ -48,10 +48,10 @@ Benutze JavaScript um nach dem klicken auf den Butten unten die Namen aus den in
 <details>
   <summary>Tip 1</summary>
 
-  Dazu wirst du die `querySelector` Funktion und einen `EventListener` brauchen.
+  Die `querySelector` Funktion und einen `EventListener` könnten bei dieser Aufgabe hilfreich sein.
 
   ### querySelector
-  Die `querySelector` Funktion gibt dir das erste Element das zu deiner Suche passt. Als parameter übergibst du dabei einen [CSS Selector](https://www.w3schools.com/cssref/css_selectors.asp) als String. 
+  Die `querySelector` Funktion gibt dir das erste Element das zu deiner Suche passt. Als parameter übergibst du dabei einen [CSS Selector](https://www.w3schools.com/cssref/css_selectors.asp) als String. Falls 
   ```html
   <button calss="myButton">Drück mich</button>
   ```
@@ -61,7 +61,8 @@ Benutze JavaScript um nach dem klicken auf den Butten unten die Namen aus den in
   ```
 
   ### EventListener
-  Ein EventListener wird aufgerufen wenn du bestimmte Aktionen auf deiner Seite machst. So kannst du fest legen das eine Funktion aufgerufen wird wenn du auf etwas clickst. EventListener funktionieren nicht nur mit Buttons sondern mit allen HTML Elementen.  
+  Ein EventListener wird aufgerufen wenn du bestimmte Aktionen auf deiner Seite machst. So kannst du fest legen das eine Funktion aufgerufen wird wenn du auf etwas clickst. 
+  EventListener funktionieren nicht nur mit Buttons sondern mit allen HTML Elementen.  
   Der erste Parameter gibt die Aktion an z.b. "click" für einen Mausclick.  
   Der zweite Parameter gibt die funktion an, die dann aufgerufen wird.
   ```javascript
@@ -75,18 +76,56 @@ Benutze JavaScript um nach dem klicken auf den Butten unten die Namen aus den in
 </details><br>
 <details>
   <summary>Tip 2</summary>
-
-  Um die Namen zu lesen kanst du die `value` Eigenschaft von input-Elementen nutzen
-  ### value Beispiel    
+  
+  ### value und Array
+  Um die Namen zu lesen kanst du die `value` Eigenschaft von input-Elementen nutzen. 
+  Denke daran das du mehrere Namen sameln must, dafür ist ein einem `Array` gut geeignet.
   ```javascript
-  let wichtelName = myInput.value
+  let alleWichtelNamen = []; // Array inizialisieren
+  // ... dein code ...
+  let wichtelName = myInput.value; // Namen auslesen
+  alleWichtelNamen.push(wichtelName); // Namen an Array anhängen
+  ```
+</details>
+<details>
+  <summary>Tip 3</summary>
+
+  ### Konsolen Ausgabe
+  Mit `console.log(...)` kannst du etwas in die schwarze Konsole unten rechts schreiben. damit kannst du schnell testen ob dein JavaScript funktioniert.
+  ```javascript
+  console.log("Der name des wichtels ist " + wichtelName);
   ```
 </details>
 
-
-
-
 ### Paare finden
+Wenn du erfolgreich deine Wichtel-Teilnehmer auf der Konsole ausgegeben hast, kannst du dir überlegen wie du die Teilnehmer einander zuordnest. 
+Dafür brauchst du einen Algorithmus der die beiden Regeln befolgt die oben beschrieben sind. Wenn du keine Idee hast kannst du dir meinen anschauen:
+<details>
+  <summary>Algorithmus</summary>
+
+  ### Konsolen Ausgabe
+  Mit `console.log(...)` kannst du etwas in die schwarze Konsole unten rechts schreiben. damit kannst du schnell testen ob dein JavaScript funktioniert.
+  ```
+  Input : teilnehmerliste
+  Inizialisiere MAP;
+  Inizialisiere TEILNEHMERLISTEKOPIE;
+  
+  FÜR TEILNEHMER in teilnehmerliste  
+    Inizialisiere INDEX;
+    Inizialisiere ZÄHLER = 0;
+    Inizialisiere PARTNER;
+    TUE
+      INDEX = zufallszahl 0 - TEILNEHMERLISTEKOPIE.anzahl
+      PARTNER = TEILNEHMERLISTEKOPIE[index]
+      ZÄHLER + 1
+    SOLANGE PARTNER == TEILNEHMER && ZÄHLER <= 100
+    entferne PARTNER von TEILNEHMERLISTEKOPIE
+  ENDE
+  
+  WENN einerÜbrig
+    nochmalVonVorne
+  ```
+</details>
 
 ### Einer ist übrig
 
