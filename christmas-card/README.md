@@ -5,9 +5,10 @@ Passend zur Weihnachtszeit gestalten wir eine Weihnachtskarte, die du am Ende di
 
 ## Ziel dieses Projekts
 
-Für deine Weihnachtskarte kannst du HTML und CSS verwenden. Versuche auch Links in die Weihnachtskarte einzubauen.
+Für deine Weihnachtskarte kannst du HTML und CSS verwenden.
+Versuche auch Links in die Weihnachtskarte einzubauen. Verwende eine Seite als Startseite und weitere Seite für den Inhalt, bzw. den Text der Karte.
 
-Hier eine Übersicht, was wir bereits mit HTML alles gemacht haben:
+Hier eine Übersicht, was wir bereits in der Einführung zu HTML alles gemacht haben:
 * Texte mit `<p>`, `<h1>`, `<h2>`, `<h3>`
 * Container (Boxen, Schachteln) mit `<div>`
 * Links mit `<a href="hier-steht-der-link"></a>`
@@ -77,6 +78,13 @@ html {
 
 In `repl.it` hast du die Möglichkeit deine Webseite auch in einem separaten Tab zu öffnen.
 Die URL des neuen Tab kannst du kopieren und an Freunde und Familie verschicken.
+Den Button zum Öffnen im neuen Tab findest oben rechts, direkt unter dem `+`-Zeichen.
 
-**Wichtig:** Damit deine Webseite auch von deinen Freunden angeschaut werden kann, musst du die Sichtbarkeit deines `repls` auf öffentlich stellen.
+**Wichtig:** Damit deine Webseite auch von deinen Freunden angeschaut werden kann, musst du die Sichtbarkeit deines `repls` auf öffentlich (`public`) stellen.
 Die Sichtbarkeit ist in `repl.it` standardmäßig auf `public` eingestellt.
+
+## Erweiterungen
+
+* `Zurück`-Link als Button umsetzen. Für die Erstellung des Buttons kann z. B. [https://www.bestcssbuttongenerator.com/](https://www.bestcssbuttongenerator.com/) verwendet werden.
+* Zusätzliche Icons einfügen z. B. mit [https://www.w3schools.com/icons/](https://www.w3schools.com/icons/).
+* Weihnachtliche gifs einbinden, z. B. von [https://giphy.com/](https://giphy.com/).
