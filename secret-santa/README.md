@@ -50,7 +50,8 @@ Benutze JavaScript um nach dem klicken auf den Butten unten die Namen aus den in
 
   Dazu wirst du die `querySelector` Funktion und einen `EventListener` brauchen.
 
-  ### querySelector Beispiel
+  ### querySelector
+  Die `querySelector` Funktion gibt dir das erste Element das zu deiner Suche passt. Als parameter übergibst du dabei einen [CSS Selector](https://www.w3schools.com/cssref/css_selectors.asp) als String. 
   ```html
   <button calss="myButton">Drück mich</button>
   ```
@@ -59,7 +60,10 @@ Benutze JavaScript um nach dem klicken auf den Butten unten die Namen aus den in
   const button = document.querySelector(".myButton");
   ```
 
-  ### EventListener Beispiel    
+  ### EventListener
+  Ein EventListener wird aufgerufen wenn du bestimmte Aktionen auf deiner Seite machst. So kannst du fest legen das eine Funktion aufgerufen wird wenn du auf etwas clickst. EventListener funktionieren nicht nur mit Buttons sondern mit allen HTML Elementen.  
+  Der erste Parameter gibt die Aktion an z.b. "click" für einen Mausclick.  
+  Der zweite Parameter gibt die funktion an, die dann aufgerufen wird.
   ```javascript
   button.addEventListener("click", tueEtwas);
 
@@ -78,6 +82,8 @@ Benutze JavaScript um nach dem klicken auf den Butten unten die Namen aus den in
   let wichtelName = myInput.value
   ```
 </details>
+
+
 
 
 ### Paare finden
