@@ -9,7 +9,7 @@ auch selbst entscheiden. Entweder du platzierst hinter jedes Türchen ein Bild o
 
 ## Ziel des Projekts
 
-Für den Adventskalender kannst du alles verwenden, was du bereits gelernt hast.
+Für den Adventskalender kannst du alles verwenden, was du bereits in der Einführung gelernt hast.
 * Texte mit `<p>`, `<h1>`, `<h2>`, `<h3>`
 * Verwendung von `<div></div>`
 * Verwendung von Links (`<a href=""></a>`)
@@ -86,12 +86,9 @@ Beispiele für solche Seiten sind:
 * [https://unsplash.com/](https://unsplash.com/)
 * [https://pixabay.com/de/](https://pixabay.com/de/)
 
-Das Bild der Beispiel-Weihnachtskarte ist von [https://www.freepik.com/](https://www.freepik.com/).
-Wenn du Bilder von dieser Seite verwenden möchtest, musst aber einen Link einfügen.
-
 ### Ganzseitiges Hintergrundbild
 
-Wenn du für deine Weihnachtskarte ein Hintergrundbild verwenden möchtest, kannst du das wie im nachfolgenden Beispiel machen.
+Wenn du für deinen Adventskalender ein Hintergrundbild verwenden möchtest, kannst du das wie im nachfolgenden Beispiel machen.
 Vom Bild wird dabei immer so viel wie möglich dargestellt.
 
 ```css
@@ -145,10 +142,17 @@ Du kannst z.B. die Nachricht ändern, die angezeigt, sobald jemand zu früh ein 
 Falls du deine HTML-Dateien für die Türchen in einem anderen Ordner abgelegt hast oder
 die Dateien anders benannt hast, musst du den Namen der HTML-Datei in `window.location.replace()` anpassen.
 
+### Weitere Ideen
+
+* `Zurück`-Links als Button umsetzen. Für die Erstellung der Buttons kann z. B. [https://www.bestcssbuttongenerator.com/](https://www.bestcssbuttongenerator.com/) verwendet werden.
+* Zusätzliche Icons einfügen z. B. mit [https://www.w3schools.com/icons/](https://www.w3schools.com/icons/).
+* Weihnachtliche gifs einbinden, z. B. von [https://giphy.com/](https://giphy.com/).
+
 ## Weihnachtskarte mit Freunden teilen
 
 In `repl.it` hast du die Möglichkeit deine Webseite auch in einem separaten Tab zu öffnen.
 Die URL des neuen Tab kannst du kopieren und an Freunde und Familie verschicken.
+Den Button zum Öffnen im neuen Tab findest oben rechts, direkt unter dem `+`-Zeichen.
 
-**Wichtig:** Damit deine Webseite auch von deinen Freunden angeschaut werden kann, musst du die Sichtbarkeit deines `repls` auf öffentlich stellen.
+**Wichtig:** Damit deine Webseite auch von deinen Freunden angeschaut werden kann, musst du die Sichtbarkeit deines `repls` auf öffentlich (`public`) stellen.
 Die Sichtbarkeit ist in `repl.it` standardmäßig auf `public` eingestellt.
