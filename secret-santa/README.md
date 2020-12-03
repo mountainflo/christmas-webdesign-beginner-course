@@ -43,6 +43,48 @@ Um zu beginnen, erstellt ein neues repl auf repl.it. Die Sprache sollte `HTML, C
 Den inhalt der `index.html` könnt ihr mit dem inhalt der [index.html](templates/index.html) im `templates` ordner ersetzen. Hier habe ich das Grundgerüst schon vorbereitet. Das gleiche macht ihr mit der [style.css](templates/style.css) datei.
 
 ### Namen lesen
+Benutze JavaScript um nach dem klicken auf den Butten unten die Namen aus den input-Elementen zu lesen und gebe Sie in der Konsole unten rechts aus.
+
+<details>
+    <summary>Tip 1</summary>
+
+    Dazu wirst du die `querySelector` Funktion und einen `EventListener` brauchen.
+
+    ### querySelector Beispiel
+    ```html
+    <button calss="myButton">Drück mich</button>
+    ```
+
+    ```javascript
+    const button = document.querySelector(".myButton");
+    ```
+
+    ### EventListener Beispiel    
+    ```javascript
+    button.addEventListener("click", tueEtwas);
+
+    function tueEtwas(event){
+        event.preventDefault();
+        // hier dein code
+    }
+    ```
+</details><br>
+<details>
+    <summary>Tip 2</summary>
+
+    Um die Namen zu lesen kanst du die `value` Eigenschaft von input-Elementen nutzen
+
+    ### value Beispiel    
+    ```javascript
+    button.addEventListener("click", tueEtwas);
+
+    function tueEtwas(event){
+        event.preventDefault();
+        // hier dein code
+    }
+    ```
+</details>
+
 
 ### Paare finden
 
