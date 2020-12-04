@@ -1,0 +1,174 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  box-shadow: 0px 4px 28px #eee;
+}
+
+header .logo{
+  height: 30px;
+  margin: 10px 100px;
+}
+
+header .title{
+  align-self: center;
+  margin: 10px 10px;
+  color: #49596A;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.frame {  
+  max-width: 1400px;
+  height: 800px;
+  margin: 40px auto;
+  background-image: 
+    radial-gradient( circle closest-side at 400px 420px ,#FFFFFF00 80%, #FFFFFFFF),
+    url("images/ski-wichtel.jpg");
+  background-size: auto 800px;
+}
+
+main.content {
+  position: relative;
+  top: 80px;
+  margin: 50px 0px 0px auto;
+  width: 540px;
+}
+
+main.content h1 {
+  margin: 0px 0px;
+  padding: 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: lighter;
+
+  color: #309020;
+}
+
+main.content p {
+  margin: 0px 0px;
+  padding: 0px 20px 10px;
+}
+
+.wichtel-form,
+.wichtel-partner {  
+  margin-top: 10px;
+  padding: 5px 20px;
+  background-color: #dd0000;
+  border-radius: 20px;
+  box-shadow: 1px 1px 8px #aaaaaa;
+
+  color: #ffffff;
+}
+
+.wichtel-list {
+  padding: 0px;
+  list-style-type: none;
+}
+
+.wichtel-list li,
+.wichtel-add {
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: inset 1px 1px 8px #aaaaaa;
+  border-radius: 8px;
+}
+
+.wichtel-list li>.material-icons,
+.wichtel-add .material-icons {
+	padding: 7px 0px;
+  font-size: 22px;
+  color: #d11c1c;
+  vertical-align: middle;
+}
+
+.wichtel-list li>.person,
+.wichtel-add .person {
+	padding: 7px 10px;
+  color: #309020;
+}
+
+.wichtel-list li>.wichtel, 
+.wichtel-list li>.partner {
+  width: 500px;
+	padding: 10px 10px;
+  font-size: 16px;
+
+  color: #000000;
+  vertical-align: middle;
+}
+
+.wichtel-list li>.partner {
+  visibility: hidden;
+}
+
+.wichtel-add input {
+  width: 500px;
+  background: #0000;
+  border: none;
+  padding: 10px 10px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.wichtel-add .add {  
+	padding: 7px 10px;
+  background: none;
+  border: none;
+  color: #309020;
+  cursor: pointer;
+}
+
+.wichtel-list .gift {
+  cursor: pointer;
+}
+
+.wichtel-list li>.remove {
+	padding: 7px 10px;
+  color: #d13e3e;
+  cursor: pointer;
+}
+
+button.submit,
+button.more,
+button.return {
+  margin: 15px 0px 10px 20px ;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #efefef 100%);
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor: pointer;
+
+	color: #777777;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 6px 12px;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+
+button.more i {
+  padding: 0px;
+	font-size: 19px;
+  line-height: 15px;
+  vertical-align: -4px;
+  font-weight: bold;
+}
+
+button.submit:hover,
+button.more:hover,
+button.return:hover {
+	box-shadow:inset 0px 1px 0px 0px #11d100;
+	border:1px solid #23a717;
+  background:linear-gradient(to bottom, #23a717 5%, #11d100 100%);
+	background-color:#23a717;
+
+	color:#FFF;
+	text-shadow:0px 1px 0px #23a717;
+}
