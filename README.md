@@ -12,3 +12,8 @@ The course includes the following content:
      * Project and task description: [advent-calendar/README.md](advent-calendar/README.md)
      * Example: [https://adventcalendar.mountainflo.repl.co/](https://adventcalendar.mountainflo.repl.co/)
 * Website for the drawing of gnome pairs
+
+## Contributors
+
+* [mountainflo](https://github.com/mountainflo)
+* [CraftyKoala](https://github.com/CraftyKoala)
