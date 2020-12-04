@@ -9,4 +9,6 @@ The course includes the following content:
     * Project and task description: [christmas-card/README.md](christmas-card/README.md)
     * Example: [https://christmascard.mountainflo.repl.co/](https://christmascard.mountainflo.repl.co/)
 * Advent calendar
+     * Project and task description: [advent-calendar/README.md](advent-calendar/README.md)
+     * Example: [https://adventcalendar.mountainflo.repl.co/](https://adventcalendar.mountainflo.repl.co/)
 * Website for the drawing of gnome pairs

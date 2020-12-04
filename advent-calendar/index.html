@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Adventskalender</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function openDoor(inputDay) {
+            let date = new Date();
+            let current_day = date.getDay();
+            let current_month = date.getMonth();
+
+            // for testing
+            /*let current_day = 5;
+            let current_month = 12;*/
+
+            if (current_month === 12 && inputDay <= current_day && inputDay > 0) {
+                //window.open("doors/door-" + inputDay + ".html") // open link in a new tab
+                window.location.replace("doors/door-" + inputDay + ".html") // open link in the same tab
+            } else {
+                alert("Du kannst das Türchen erst am " + inputDay + ". aufmachen.")
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Adventskalender 2020</h1>
+    <div class="grid">
+        <div class="door" id="door8"><a href="#" class="button-door-link">8</a></div>
+        <div class="door" id="door3"><a href="#" class="button-door-link">3</a></div>
+        <div class="door" id="door5"><a href="#" class="button-door-link">5</a></div>
+        <div class="door" id="door11"><a href="#" class="button-door-link">11</a></div>
+        <div class="door" id="door23"><a href="#" class="button-door-link">23</a></div>
+        <div class="door" id="door9"><a href="#" class="button-door-link">9</a></div>
+        <div class="door" id="door10"><a href="#" class="button-door-link">10</a></div>
+        <div class="door" id="door20"><a href="#" class="button-door-link">20</a></div>
+        <div class="door" id="door12"><a href="#" class="button-door-link">12</a></div>
+        <div class="door" id="door2"><a href="#" class="button-door-link">2</a></div>
+        <div class="door" id="door13"><a href="#" class="button-door-link">13</a></div>
+        <div class="door" id="door15"><a href="#" class="button-door-link">15</a></div>
+        <div class="door" id="door4"><a href="#" class="button-door-link">4</a></div>
+        <div class="door" id="door16"><a href="#" class="button-door-link">16</a></div>
+        <div class="door" id="door24"><a href="#" onclick="openDoor(24)" class="button-door-link">24</a></div>
+        <div class="door" id="door1"><a href="#" onclick="openDoor(1)" class="button-door-link">1</a></div>
+        <div class="door" id="door17"><a href="#" class="button-door-link">17</a></div>
+        <div class="door" id="door22"><a href="#" class="button-door-link">22</a></div>
+        <div class="door" id="door6"><a href="#" class="button-door-link">6</a></div>
+        <div class="door" id="door18"><a href="#" class="button-door-link">18</a></div>
+        <div class="door" id="door14"><a href="#" class="button-door-link">14</a></div>
+        <div class="door" id="door19"><a href="#" class="button-door-link">19</a></div>
+        <div class="door" id="door7"><a href="#" class="button-door-link">7</a></div>
+        <div class="door" id="door21"><a href="#" class="button-door-link">21</a></div>
+    </div>
+</body>
+</html>
