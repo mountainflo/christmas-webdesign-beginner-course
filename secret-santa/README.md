@@ -139,20 +139,27 @@ Dafür brauchst du einen Algorithmus der die Regeln befolgt die oben beschrieben
 
   Wenn du in Javascript einen Array einer Funktion übergeben wollt wird nicht der inhalt des Arrays übergeben sondern nur ein Verweis auf das original. Wenn du also in der Funktion den Teilnehmer-Array verändern willst, musst du ihn kopieren. 
 
-  ### Array.from
-  Erstellt eine genaue Kopie von dem übergebenen Array.
+  ### Array.from und splice
+  `Array.from` erstellt eine genaue Kopie von dem übergebenen Array. Mit `splice(pos, anzahl)` kanst du an der übergebenen Position die übergebene Anzahl an Elementen löschen.
+  Denkt daran das der index eines arrays bei 0 anfängt.
+  
   ```javascript
   const teilnehmer = ['Bernd','Lisa'];
-  const teilnehmer2 = teilnehmer;
-
-
+  
+  function tueetwas(teilnehmer){
+    let teilnehmerKopie = Array.from(teilnehmer);
+    teilnehmerKopie.splice(0, 1);
+    // teilnehmerKopie : ['Lisa']
+  }
+  
+  // teilnehmerKopie : ['Bernd','Lisa']
   ```
 </details>
 <details>
   <summary>Tip 2: for each</summary>
 
   ### ForEach
-  Vielleicht kennst du schon `for` Schleifen. Wusstest du das es eine vereinfachte Variante fŕ Arrays gibt?
+  Vielleicht kennst du schon `for` Schleifen. Wusstest du das es eine vereinfachte Variante für Arrays gibt?
   Wenn du deine Teilnehmer in einem Array gespeichert hast kannst du hiermit ganz einfach durch deine Teilnehmer gehen.
 
   ```javascript
@@ -170,12 +177,42 @@ Dafür brauchst du einen Algorithmus der die Regeln befolgt die oben beschrieben
   }
   ```
 </details>
+<details>
+  <summary>Tip 3: Zufallszahlen</summary>
 
-TODO: more tips
+  ### Math.random()
+  Um zufällige Paare zu generieren brauchst du Zufallszahlen. diese kannst du mit der Funktion `Math.random()` generieren. Sie generiert Zahlen von 0 bis 1.
+  Um eine Zahl in deinem gewünschten Breich zu bekommen musst du das Ergebnis mit der höchsten Zahl multiplizieren die du erhalten möchtest. 
+  Um kommazahlen zu vermeiden kannst du die Funktion `Math.floor()` benutzen, diese rundet die Zahl.
+
+  ```javascript
+  // Zufallszahl von 0 bis 10
+  let zahl = Math.floor(Math.random() * 10);
+  
+  // Zufallszahl von 0 bis 8
+  let zahl = Math.floor(Math.random() * 8);
+  ```
+</details>
+<details>
+  <summary>Tip 4: Paare merken</summary>
+
+  ### Map()
+  Arrays können pro Index nur einen Wert speichern. Um uns paare zu merken müssen wir aber nicht viel tricksen. Eine `Map` speichert immer einen Wert zu einem Schlüssel.
+  Das ist perfekt für diese Aufgabe. Neue paare fügst du mit der funktion `push()` hinzu.
+
+  ```javascript
+    let paare = new Map();
+    paare.set("Anna","Bert");
+    paare.set("Bert","Anna");
+    console.log(paare);
+    // Ausgabe: {"Anna" => "Bert", "Bert" => "Anna"}
+  ```
+</details>
+
 
 ### Wann seh ich denn endlich etwas
-Wenn du weist dass dein JavaScript-Code funktioniert kannst du dich um die anzeige der paare kümmern.
-Versuche deine Lösung dynamisch zu schreiben, damit Sie mit einer beliebigen Anzahl von Teilnehmern funktioniert. Auf diese Weise musst du im nächsten Schritt nicht alles neu schreiben.   
+Wenn du weist dass dein JavaScript-Code funktioniert kannst du dich um die Anzeige der Paare kümmern.
+Versuche deine Lösung dynamisch zu schreiben, damit Sie mit einer beliebigen Anzahl von Teilnehmern funktioniert. Auf diese Weise musst du im nachher nicht alles neu schreiben.   
 
 <details>
   <summary>Tip 1: innerHTML</summary>
@@ -336,9 +373,9 @@ Damit wir nicht immer unsere Seite anpassen müssen wenn sich die Anzahl unserer
 
 
 ### Deinen Namen kenn ich nicht
-Vielleicht hast du schon festgestellt das es probleme machen kann wenn Man versucht einen leeren String ein zu geben oder ein Name doppelt ist. Versuche zu prüfen ob der eingegebene Name leer ist bevor du ihn verarbeitest. Bonus: schaffst du es auch zu prüfen ob der Name schon in der Gruppe vorhanden ist ?
+Vielleicht hast du schon festgestellt das es Probleme machen kann wenn man versucht einen leeren String ein zu geben. Versuche zu prüfen ob der eingegebene Name leer ist bevor du ihn verarbeitest. Bonus: schaffst du es auch zu prüfen ob der Name schon in der Gruppe vorhanden ist ?
 
-## partner bleiben geheim
+## Partner bleiben geheim
 Wie ihr bestimmt schon gemerkt habt, kann man nach dem Klick auf den Button immer direkt alle Partner sehen. Nutzt was ihr bisher gelernt habt um die namen erst an zu zeigen wenn man über ein icon in der Zeile fährt. dafür könnt ihr die Event-Listener `mouseover` und `mouseout` nutzen.
 
 
