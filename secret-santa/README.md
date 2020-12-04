@@ -271,10 +271,10 @@ Versuche herauszufinden wie du es lösen kannst. Man müsste das doch irgendwie 
 Damit wir nicht immer unsere Seite anpassen müssen wenn sich die Anzahl unserer Teilnehmer ändert versuche das bisher gelernte zu nutzen um beliebig viele Teilnehmer zu ermöglichen.
 
 <details>
-  <summary>Tip 1: innerText</summary>
+  <summary>Tip 1: textContent</summary>
 
-  ### innerText
-  Du kannst auch aus "normalen" HTML-Elementen text auslesen. Die funktion dafür heißt `innerText`.
+  ### textContent
+  Du kannst auch aus "normalen" HTML-Elementen text auslesen. Die funktion dafür heißt `textContent`.
 
   ```html
   <span class="wichtel">Anna</span>
@@ -282,7 +282,7 @@ Damit wir nicht immer unsere Seite anpassen müssen wenn sich die Anzahl unserer
 
   ```javascript
   const wichtel = document.querySelector(".wichtel");
-  let name = wichtel.innerText;
+  let name = wichtel.textContent;
   ```
 </details>
 
