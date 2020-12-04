@@ -265,7 +265,7 @@ Versuche herauszufinden wie du es lösen kannst. Man müsste das doch irgendwie 
   Denke aber daran einen Zähler zu benutzen, damit dein Programm es nicht unendlich nochmal versucht.
 </details>
 
-## Wir sind mehr als 3-4
+## Wir sind mehr als 4
 Damit wir nicht immer unsere Seite anpassen müssen wenn sich die Anzahl unserer Teilnehmer ändert versuche das bisher gelernte zu nutzen um beliebig viele Teilnehmer zu ermöglichen.
 
 <details>
