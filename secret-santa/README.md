@@ -34,9 +34,11 @@ Du wirst hier viel JavaScript brauchen also halte besser eine JavaScript Dokumen
 
 Als ersten Schritt wollen wir 4 Namen sammeln und jedem einen partner aus der Gruppe zulosen.
 
-**Beispiel :**  
-Eingabe: Anna, Bert, Ernie, Lisa
+#### Beispiel :  
+```
+Eingabe: Anna, Bert, Ernie, Lisa  
 Ausgabe: {"Anna" => "Bert", "Bert" => "Anna", "Ernie" => "Lisa", "Lisa" => "Ernie"}
+```
 
 ### Anfang
 Um zu beginnen, erstellt ein neues repl auf repl.it. Die Sprache sollte `HTML, CSS, JS` sein.
