@@ -107,7 +107,7 @@ Viel Spaß mit dem <a href="advents-calender.html">Online-Adventskalender</a> vo
 ### Selektoren
 
 |  Selektor    |  Beispiel   |  Beschreibung    | 
-| ---- | ---- |
+| ---- | ---- | ---- |
 |  Typselektor     | `p`, `h1`, ...       |  Gilt für alle HTML-Elemente mit diesem Tag |
 |  id-Selektor     | `#zitat`       |  Gilt für genau ein HTML-Element, das diese id besitzt (HTML-Attribut: `id="zitat"`)  |
 |  Klassenselektor     | `.fliesstext`  |  Gilt für alle HTML-Elemente, diesen Klassennamen haben (HTML-Attribut: `class="fliesstext"`) |
