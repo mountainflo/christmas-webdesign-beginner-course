@@ -18,6 +18,13 @@
 
 **[CSS](#css)**
 
+* [CSS-Datei im HTML einbinden](#css-datei-im-html-einbinden)
+* [Schriftformatierung](#schriftformatierung)
+* [Außenabstände](#auenabstnde)
+* [Slektoren](#selektoren)
+* [Links](Links)
+* [Innenabstände](#innenabstnde)
+
 **[JavaScript](#javascript)**
 
 ## HTML
@@ -68,5 +75,68 @@ Viel Spaß mit dem <a href="advents-calender.html">Online-Adventskalender</a> vo
  ```
 
 ## CSS
+
+### CSS-Datei im HTML einbinden
+
+```html
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+```
+
+### Schriftformatierung
+
+|      |  Eigenschaft    |  Werte    |
+| ---- | ---- | ---- |
+|  Schriftgröße     | `font-size`       |  `0.75em`, `1em`, `3em`, ...  |
+|  Schriftart       | `font-family`     |  `sans-serif`, `serif`     |
+|  Fett             | `font-weight`     |  `bold`                    |
+|  Kursiv           | `font-style`      |  `italic`                  |
+|  Farbe            | `color`           |  `pink`, `red`, `orange`, `yellow`, `gold`, `brown`, `olive`, `green`, `cyan`, `blue`, `violet`, `magenta`, `purple`, `white`, `black` |
+|  Textausrichtung  | `text-align`      |  `left`, `right`, `center` |
+
+### Außenabstände
+
+|      |  Eigenschaft    |  Werte    |
+| ---- | ---- | ---- |
+|  oben     | `margin-top`       |  `0.75em`, `1em`, `3em`, ...    |
+|  unten     | `margin-bottom`       |  `0.75em`, `1em`, `3em`, ...    |
+|  links     | `margin-left`       |  `0.75em`, `1em`, `3em`, ...    |
+|  rechts     | `margin-right`       |  `0.75em`, `1em`, `3em`, ...    |
+
+### Selektoren
+
+|  Selektor    |  Beispiel   |  Beschreibung    | 
+| ---- | ---- |
+|  Typselektor     | `p`, `h1`, ...       |  Gilt für alle HTML-Elemente mit diesem Tag |
+|  id-Selektor     | `#zitat`       |  Gilt für genau ein HTML-Element, das diese id besitzt (HTML-Attribut: `id="zitat"`)  |
+|  Klassenselektor     | `.fliesstext`  |  Gilt für alle HTML-Elemente, diesen Klassennamen haben (HTML-Attribut: `class="fliesstext"`) |
+
+### Links
+
+|      |  Eigenschaft    |  Werte    |
+| ---- | ---- | ---- |
+|  unterstreichen     | `text-decoration`       |  `none`, `underline`    |
+
+Für Links kannst du auch noch die Formatierung ändern, sobald du mit der Maus darüber fährst.
+Dies machst du mit `hover`. Für Klassen verwendest du `a.CLASSNAME:hover`
+und für Id-Selektoren z. B. `#zitat:hover`.
+
+```css
+a:hover {
+    color: blue;
+}
+```
+
+### Innenabstände
+
+Innenabstände kannst du hauptsächlich bei den Boxen (`<div>`) verwenden.
+
+|      |  Eigenschaft    |  Werte    |
+| ---- | ---- | ---- |
+|  oben     | `padding-top`       |  `0.75em`, `1em`, `3em`, ...    |
+|  unten     | `padding-bottom`       |  `0.75em`, `1em`, `3em`, ...    |
+|  links     | `padding-left`       |  `0.75em`, `1em`, `3em`, ...    |
+|  rechts     | `padding-right`       |  `0.75em`, `1em`, `3em`, ...    |
 
 ## JavaScript
