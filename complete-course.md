@@ -205,24 +205,24 @@ Probiere eine CSS-Eigenschaft aus und lade die HTML-Seite neu. Verändere den We
 
 #### Schriftformatierung
 
-**Schriftgröße** (`font-size: 1em`)
+*Schriftgröße:* (`font-size: 1em`)
 Mit `font-size` definierst du die Schriftgröße. `1em` entspricht dabei der normalen Schriftgröße im Browser.
 Soll der Text kleiner verwenden kannst du z.B. `0.8em` oder `0.75em` verwenden. 
 Für Überschriften verwendest du Schriftgrößen wie `2em`, `3em` oder `4em`.
 Probiere einfach aus, mit welcher Schriftgröße die am besten gefällt bist.
 
-**Schriftart** (`font-family: sans-serif`)
+*Schriftart:* (`font-family: sans-serif`)
 Für die Schriftart gibt es `sans-serif` (z. B. für Überschriften) und `serif` (z. B. für Fließtexte).
 
-**Fett/Bold** (`font-weight: bold`)
+*Fett/Bold:* (`font-weight: bold`)
 
-**Kursiv/Italic** (`font-weight: italic`)
+*Kursiv/Italic:* (`font-weight: italic`)
 
-**Farbe** (`color: red`)
+*Farbe:* (`color: red`)
 Du kannst für die Farbe folgende bekannte Farben werden:
 `pink`, `red`, `orange`, `yellow`, `gold`, `brown`, `olive`, `green`, `cyan`, `blue`, `violet`, `magenta`, `purple`, `white`, `black`
 
-**Textausrichtung** (`text-align: left`)
+*Textausrichtung:* (`text-align: left`)
 Die Textausrichtung ist standardmäßig linksbündig (`left`). Es gibt aber noch rechtsbündig (`right`) und zentriert (`center`).
 
 #### Außenabstände (margin)
@@ -239,6 +239,7 @@ p {
 `````
 
 > **Aufgabe:** Probiere dich nun an den CSS-Eigenschaften aus. Versuche Absätze und Überschriften zu formatieren.
+> Du kannst die Außenabstände auch auf Bilder anwenden.
 > Versuche alle der eben gelernten Eigenschaften einmal auszuprobieren.
 
 ### Selektoren
@@ -259,15 +260,16 @@ Im obigen Beispiel hat der zweite Absatz die id `important-text`.
 Im nachfolgenden CSS kannst du mit dem Raute-Zeichen `#` und der id genau dieses eine Element formatiern.
 Für den zweiten Absatz mit der id wäre es somit `#important-text` gefolgt von geschweiften Klammern.
 
-`````css
+```css
 p {
     font-size: 1em;
     margin-top: 1.5em;
 }
+
 #important-text {
     color: green;
 }
-`````
+```
 
 Sehen wir uns das obige CSS genauer an. Mit `p` werden alle Absätze mit der Schriftgröße `1em` und
 einem Abstand nach oben von `1.5em` formatiert. 
@@ -278,10 +280,23 @@ mit der id `important-text` übernommen.
 Also `important-text` ist am Ende nicht nur grün eingefärbt, sondern auch die Schriftgröße `1em`
 und einen Abstand nach oben von `1.5em`.
 
+> **Aufgabe:** Probiere dich nun an den CSS-Eigenschaften aus. Versuche einzelne Absätze und Überschriften
+> etwas anders zu formatieren als die übrigen.
+> Versuche alle der eben gelernten Eigenschaften einmal auszuprobieren.
+
 ### Strukturierung mit Containern/Boxen
 
-`<div>` (engl. "division" für Abteilung/Bereich)
+Mit dem HTML-Element `<div>` (engl. "division" für Abteilung/Bereich) kannst du leicht ganze Bereiche
+auf deiner Webseite verschieben oder mit Formatierungen versehen.
+Beim Adventskalender wird jedes Türchen aus einem `<div>` bestehen.
 
+Du kannst für die Boxen Außenabstände definieren (`margin`) und auch eine Hintergrundfarbe (`background-color`).
+Zudem ist es möglich der Box eine Breite `width` und/oder eine Höhe `height` zu geben.
 
-#### Innenabstände (padding)
+Um ein `<div>` mittig auf der Seite zu platzieren, kannst du bei den Außenabständen `auto` verwenden.
+Die horizontalen, bzw. vertikalen Außenabstände werden dabei gleichmäßig aufgeteilt.
+
+> **Aufgabe:** Platziere eine Box mit Inhalt horizontal mittig auf der Seite.
+> Verwende dazu den Wert `auto` anstatt eines festen Wertes für den linke und den rechten Abstand.
+> Gebe der Box eine Breite von `75%` und noch einen Abstand nach oben (`margin-top`).
 

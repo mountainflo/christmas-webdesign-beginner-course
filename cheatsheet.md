@@ -128,6 +128,14 @@ a:hover {
 }
 ```
 
+### div-container formatieren
+
+|      |  Eigenschaft    |  Werte    |
+| ---- | ---- | ---- |
+|  Hintergrundfarbe     | `background-color`       |  `red`, `green`, `blue`, ...    |
+|  Breite     | `width`       |  `5em`, ...    |
+|  Höhe     | `height`       |  `5em`, ...    |
+
 ### Innenabstände
 
 Innenabstände kannst du hauptsächlich bei den Boxen (`<div>`) verwenden.
