@@ -134,7 +134,21 @@ Dafür brauchst du einen Algorithmus der die beiden Regeln befolgt die oben besc
   ```
 </details>
 <details>
-  <summary>Tip 1: for each</summary>
+  <summary>Tip 1: Array kopieren</summary>
+
+  Wenn du in Javascript einen Array einer Funktion übergeben wollt wird nicht der inhalt des Arrays übergeben sondern nur ein Verweis auf das original. Wenn du also in der Funktion den Teilnehmer-Array verändern willst, musst du ihn kopieren. 
+
+  ### Array.from
+  Erstellt eine genaue Kopie von dem übergebenen Array.
+  ```javascript
+  const teilnehmer = ['Bernd','Lisa'];
+  const teilnehmer2 = teilnehmer;
+
+
+  ```
+</details>
+<details>
+  <summary>Tip 2: for each</summary>
 
   ### ForEach
   Vielleicht kennst du schon `for` Schleifen. Wusstest du das es eine vereinfachte Variante fŕ Arrays gibt?
@@ -284,6 +298,38 @@ Damit wir nicht immer unsere Seite anpassen müssen wenn sich die Anzahl unserer
   const wichtel = document.querySelector(".wichtel");
   let name = wichtel.textContent;
   ```
+</details>
+
+<details>
+  <summary>Tip 2: target & classList</summary>
+
+  Falls du nicht nur Teilnehmer hinzufügen sondern auch entfernen möchtest. Kannst du das target und classList attribut verwenden um den EventListener einfacher zu machen.
+
+  ### target & classList
+  Jeder EventListener 
+
+  ```html
+  <div class="list">
+    <div class="wichtel">
+      <span class="name">Bert</span>
+      <span class="remove-icon">Löschen</span>
+    </div>
+  </div>
+  ```
+
+  ```javascript
+  const list = document.querySelector(".list");
+  list.addEventListener("click", wichtelLöschen);
+  
+  function wichtelLöschen(event) {
+    let element = event.target;
+    if(element.classList[0] === "remove-icon") {
+      element.parentElement.remove();
+    }
+  }
+  ```
+
+  In diesem Beispiel gibt es gleich mehrere Dinge die dir helfen. 
 </details>
 
 
