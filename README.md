@@ -12,6 +12,9 @@ The course includes the following content:
      * Project and task description: [advent-calendar/README.md](advent-calendar/README.md)
      * Example: [https://adventcalendar.mountainflo.repl.co/](https://adventcalendar.mountainflo.repl.co/)
 * Website for the drawing of gnome pairs
+     * Project and task description: [secret-santa/README.md](secret-santa/README.md)
+     * Code: [secret-santa/demo](secret-santa/demo)
+     * Example: [https://wichtel-wichtel.craftykoala.repl.co/](https://wichtel-wichtel.craftykoala.repl.co/)
 
 ## Contributors
 
