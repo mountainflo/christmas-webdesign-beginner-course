@@ -6,7 +6,11 @@
     * Alle wichtigen HTML-Elemente: [https://wiki.selfhtml.org/wiki/HTML#Elemente](https://wiki.selfhtml.org/wiki/HTML#Elemente)
 * Kurz und kompakt alle HTML-Befehle und CSS-Eigenschaften (auf Englisch): [https://www.w3schools.com/](https://www.w3schools.com/)
     * CSS-Referenz: [https://www.w3schools.com/cssref](https://www.w3schools.com/cssref)
-    * HTML-Referenz: [https://www.w3schools.com/tags](https://www.w3schools.com/tags)
+    * HTML-Referenz: [https://www.w3schools.com/tags](https://www.w3schools.com/tags)    
+* Einfache JavaScript dokumentation mit Beispielen
+    * [W3Schools.com JavaScript](https://www.w3schools.com/js/default.asp)  
+* Detailierte JavaScript dokumentation wenn man es genau wissen will 
+    * [MDN JavaScript Dokumentation](https://developer.mozilla.org/de/docs/Web/JavaScript)  
 
 **[HTML](#html)**
 
