@@ -17,7 +17,7 @@ Für die Schriftart gibt es `sans-serif` (z. B. für Überschriften) und `serif`
 
 *Fett/Bold:* (`font-weight: bold`)
 
-*Kursiv/Italic:* (`font-weight: italic`)
+*Kursiv/Italic:* (`font-style: italic`)
 
 *Farbe:* (`color: red`)
 Du kannst für die Farbe folgende bekannte Farben werden:
