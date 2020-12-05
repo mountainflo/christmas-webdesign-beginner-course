@@ -148,4 +148,81 @@ Innenabstände kannst du hauptsächlich bei den Boxen (`<div>`) verwenden.
 |  links     | `padding-left`       |  `0.75em`, `1em`, `3em`, ...    |
 |  rechts     | `padding-right`       |  `0.75em`, `1em`, `3em`, ...    |
 
+
 ## JavaScript
+
+### JavaScript-Datei im HTML einbinden
+```html
+<head>    
+	<script src="script.js" defer>
+</head>
+```
+Das Schlüsselwort defer is hier wichtig. Es sorgt dafür, dass dieses Script erst geladen wird wenn das HTML fertig ist. 
+
+### Variablen
+
+```javascript
+const festeVariable // definiert eine variable die nicht überschrieben werden darf, arrays in so einer variable können sich aber noch ändern
+let variable // Variable, ist auf den block {} begrenzt in dem Sie definiert wird
+```
+
+### Array
+```javascript
+let liste = []; // Array initialisieren
+liste.push("Anna"); // Namen an Array anhängen
+liste.push("Ernie");
+// liste : ["Anna","Ernie"]
+liste.splice(liste.length-1, 1); // letztes Element löschen
+// liste : ["Anna"]
+```
+
+### Konsolenausgabe
+```javascript
+console.log("Hallo Welt");
+```
+
+### EventHandler
+```javascript
+htmlElement.addEventListener("click", tueEtwas); // Wenn ein element geklickt wird
+htmlElement.addEventListener("mouseover", tueEtwas); // Wenn die Maus über ein element fährt
+htmlElement.addEventListener("mouseout", tueEtwas); // Wenn die Maus ein Element verlässt
+htmlElement.addEventListener("keypress", tueEtwas); // Wenn die eine taste auf der Tastatur gedrückt wird
+
+funktion tueEtwas(event) {
+}
+```
+
+### HTML Elemente finden
+```javascript
+// Gibt das erste element zurück das die button class hat
+document.querySelector(".button");
+
+// Gibt einen Array mit allen elementen zurück die die wichtel class haben
+document.querySelectorAll(".wichtel");
+```
+
+### IF Bedingungen
+```javascript
+if(wichtel === "klaus"){
+  // Wird ausgeführt wenn die Variable wichtel den String 'klaus' enthällt
+}
+
+if(wichtel === "klaus" && zaehler < 100){
+  // Wird ausgeführt wenn die Variable wichtel den String 'klaus' enthällt und der zähler kleiner als 100 ist
+}
+
+if(wichtel === "klaus" || zaehler < 100){
+  // Wird ausgeführt wenn die Variable wichtel den String 'klaus' enthällt oder der zähler kleiner als 100 ist
+}
+```
+
+### For each Schleife
+
+```javascript
+const teilnehmer = ['Bernd','Lisa','Klaus','Lara'];
+
+for (const tn in teilnehmer) {
+  // wird für jeden teilnehmer ausgeführt
+  // tn enthällt den namen des aktuellen teilnehmers
+}
+```
