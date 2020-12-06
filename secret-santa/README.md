@@ -165,7 +165,7 @@ Dafür brauchst du einen Algorithmus der die Regeln befolgt die oben beschrieben
   ```javascript
   const teilnehmer = ['Bernd','Lisa','Klaus','Lara'];
 
-  for (const tn in teilnehmer) {
+  for (const tn of teilnehmer) {
     console.log(tn);
     /*
       Ausgabe:
@@ -239,7 +239,7 @@ Versuche deine Lösung dynamisch zu schreiben, damit Sie mit einer beliebigen An
   ```javascript
   const wichtelPaare = new Map();
 
-  for (const paar in wichtelPaare) {
+  for (const paar of wichtelPaare) {
     let wichtel = paar[0]; // key
     let partner = paar[1]; // value
   }
